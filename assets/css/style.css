@@ -1142,6 +1142,182 @@ h2 {
   }
 }
 
+/* ================= COMMENTS SECTION ================= */
+.comments-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(34, 255, 136, 0.15);
+}
+
+.comments-title {
+  color: var(--glow);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comments-title::before {
+  content: "💬";
+  font-size: 0.9rem;
+}
+
+.comments-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Scrollbar styling */
+.comments-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.comments-list::-webkit-scrollbar-track {
+  background: rgba(34, 255, 136, 0.05);
+  border-radius: 2px;
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+  background: rgba(34, 255, 136, 0.3);
+  border-radius: 2px;
+}
+
+.comments-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 255, 136, 0.5);
+}
+
+/* ================= COMMENT ITEM ================= */
+.comment-item {
+  background: rgba(34, 255, 136, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(34, 255, 136, 0.1);
+  transition: all 0.2s ease;
+}
+
+.comment-item:hover {
+  background: rgba(34, 255, 136, 0.08);
+  border-color: rgba(34, 255, 136, 0.2);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.comment-name {
+  color: var(--glow);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comment-name::before {
+  content: "👤";
+  font-size: 0.8rem;
+}
+
+.comment-time {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.comment-text {
+  color: var(--text);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ================= LOADING STATE ================= */
+.loading-comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.loading-comments i {
+  font-size: 1.2rem;
+  color: var(--glow);
+}
+
+.empty-comments {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: rgba(34, 255, 136, 0.05);
+  border-radius: 10px;
+  border: 1px dashed rgba(34, 255, 136, 0.2);
+}
+
+/* ================= STATUS MESSAGE ================= */
+.status-message {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  display: none;
+}
+
+.status-message.success {
+  display: block;
+  background: rgba(34, 255, 136, 0.1);
+  color: var(--glow);
+  border: 1px solid rgba(34, 255, 136, 0.3);
+}
+
+.status-message.error {
+  display: block;
+  background: rgba(255, 34, 34, 0.1);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 34, 34, 0.3);
+}
+
+/* ================= RESPONSIVE COMMENTS ================= */
+@media (max-width: 768px) {
+  .comments-section {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .comments-list {
+    max-height: 250px;
+  }
+
+  .comment-item {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .comments-title {
+    font-size: 1rem;
+  }
+
+  .comment-name {
+    font-size: 0.85rem;
+  }
+
+  .comment-text {
+    font-size: 0.8rem;
+  }
+}
+
 /* ================= RESPONSIVE CONTACT ================= */
 @media (max-width: 768px) {
   .contact-section {

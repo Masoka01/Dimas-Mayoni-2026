@@ -377,7 +377,7 @@
         </div>
       </div>
 
-      <!-- COMMENT FORM -->
+      <!-- COMMENT SECTION -->
       <div class="contact-cta">
         <h4 class="cta-title">Ada proyek menarik? Mari berdiskusi!</h4>
 
@@ -409,6 +409,18 @@
 
           <div id="messageStatus" class="status-message"></div>
         </form>
+
+        <!-- Kolom Komentar yang Sudah Dikirim -->
+        <div class="comments-section">
+          <h5 class="comments-title">Komentar Terbaru</h5>
+          <div id="commentsList" class="comments-list">
+            <!-- Komentar akan dimuat di sini dari Firebase -->
+            <div class="loading-comments">
+              <i class="bx bx-loader-circle bx-spin"></i>
+              <span>Memuat komentar...</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
