@@ -1,533 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimas Mayoni | Portfolio</title>
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-
-    <!--=============== BOXICONS ===============-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Dimas Mayoni</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Mayoni</a>
+    <header>
+      <div class="container nav">
+        <h1 class="logo">Mayoni</h1>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt"></i>
-              </a>
-            </li>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-wrap">
+        <img src="assets/img/Dimas-Mayoni-home.png" class="hero-img" />
+        <div>
+          <span class="muted">Halo, saya</span>
+          <h2>Dimas Mayoni</h2>
+          <p class="job">Frontend Developer</p>
+          <div class="hero-btn">
+            <a href="assets/pdf/CV.pdf" class="btn">Download CV</a>
+            <a href="#skills" class="btn-outline">Lihat Skill</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-book"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#work" class="nav__link">
-                <i class="bx bx-briefcase-alt-2"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="bx bx-message-square-detail"></i>
-              </a>
-            </li>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h3>Skill & Experience</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML - Intermediate</li>
+            <li>CSS - Intermediate</li>
+            <li>Javascript - Intermediate</li>
+            <li>Bootstrap - Intermediate</li>
+            <li>Git - Intermediate</li>
           </ul>
         </div>
 
-        <!-- Theme Change Button -->
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-      </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__data">
-            <span class="home__greeting">Halo, nama saya</span>
-            <h1 class="home__name">Dimas Mayoni</h1>
-            <h3 class="home__education">Frontend Developer</h3>
-
-            <div class="home__buttons">
-              <a
-                download=""
-                href="assets/pdf/CV.pdf"
-                class="button button--ghost"
-              >
-                Download CV
-              </a>
-
-              <a href="#about" class="button">Tentang Saya</a>
-            </div>
-          </div>
-
-          <div class="home__handle">
-            <img
-              src="assets/img/Dimas-Mayoni-home.png"
-              alt="Dimas Mayoni"
-              class="home__img"
-            />
-          </div>
-
-          <div class="home__social">
-            <a
-              href="https://www.youtube.com/@masokatoramonline4602"
-              class="home__social-link"
-              target="_blank"
-            >
-              <i class="bx bxl-youtube"></i>
-            </a>
-
-            <a
-              href="https://www.instagram.com/iammayoni"
-              class="home__social-link"
-              target="_blank"
-            >
-              <i class="bx bxl-instagram"></i>
-            </a>
-
-            <a
-              href="https://www.facebook.com/profile.php?id=100094714286074"
-              class="home__social-link"
-              target="_blank"
-            >
-              <i class="bx bxl-facebook-circle"></i>
-            </a>
-          </div>
-
-          <a href="#about" class="home__scroll">
-            <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
-          </a>
-        </div>
-      </section>
-
-      <!--=============== ABOUT ===============-->
-      <section class="about section" id="about">
-        <span class="section__subtitle">Perkenalan</span>
-        <h2 class="section__title">Tentang Saya</h2>
-
-        <div class="about__container container grid">
-          <img
-            src="assets/img/Dimas-Mayoni-about.png"
-            alt=""
-            class="about__img"
-          />
-
-          <div class="about__data">
-            <div class="about__info">
-              <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">2 Years</span>
-              </div>
-
-              <div class="about__box">
-                <i class="bx bx-briefcase-alt about__icon"></i>
-                <h3 class="about__title">Complete</h3>
-                <span class="about__subtitle">1500+ Job</span>
-              </div>
-
-              <div class="about__box">
-                <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Support</h3>
-                <span class="about__subtitle">Online 24/7</span>
-              </div>
-            </div>
-
-            <p class="about__description">
-              Frontend Developer, saya membuat website dengan fokus pada UI/UX
-              yang nyaman dan responsif. <br />
-              <br />
-              Saya memiliki pengalaman beberapa bulan serta telah menangani
-              beberapa proyek dengan klien yang merasa puas terhadap hasil kerja
-              saya. <br />
-              <br />
-              Selain itu, saya memiliki pemahaman dasar backend untuk kebutuhan
-              integrasi dan logika aplikasi, serta pengetahuan dasar Linux dalam
-              pengelolaan environment dan penggunaan command line.
-            </p>
-            <a href="#contact" class="button">Hubungi Saya</a>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills">
-        <span class="section__subtitle">Kemampuan</span>
-        <h2 class="section__title">Pengalaman</h2>
-
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">Frontend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Javascipt</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card">
+          <h4>Backend</h4>
+          <ul>
+            <li>Firebase Auth - Basic</li>
+            <li>Firestore - Basic</li>
+            <li>Rules - Basic</li>
+            <li>CRUD - Basic</li>
+            <li>Integration - Basic</li>
+          </ul>
         </div>
 
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">Backend Developer</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Firebase Authentication</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Firebase Firestore</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Firebase Rules</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Frontend–Backend Integration</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">CRUD Operation</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card">
+          <h4>Linux</h4>
+          <ul>
+            <li>Environment Setup</li>
+            <li>Package Management</li>
+            <li>Git via Terminal</li>
+            <li>Deployment Awareness</li>
+          </ul>
         </div>
-
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">Linux</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Linux</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Environment Setup</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Package Management</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Deployment Awareness</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git via Terminal</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== WORK ===============-->
-      <section class="work section" id="work">
-        <span class="section__subtitle">Portfolio</span>
-        <h2 class="section__title">Project Terbaru</h2>
-
-        <!-- <div class="work__filters">
-          <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Web</span>
-          <span class="work__item" data-filter=".mayoni">Mayoni</span>
-          <span class="work__item" data-filter=".design">Design</span>
-        </div> -->
-
-        <div class="work__container container grid">
-          <div class="work__card mix web">
-            <img src="assets/img/1.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Toko Online Web Base</h3>
-
-            <a
-              href="https://rumah-undangan.vercel.app/"
-              target="_blank"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix mayoni">
-            <img src="assets/img/2.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Fitur Nama Undangan</h3>
-
-            <a
-              href="https://fitur-nama-mayoni.vercel.app/"
-              target="_blank"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix design">
-            <img src="assets/img/3.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Formulir Pengisian Data Undangan</h3>
-
-            <a
-              href="https://form-data-blue.vercel.app/"
-              target="_blank"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card mix design">
-            <img src="assets/img/4.png" alt="" class="work__img" />
-
-            <h3 class="work__title">Undangan Pernikahan</h3>
-
-            <a
-              href="https://andersen-01.vercel.app/"
-              target="_blank"
-              class="work__button"
-            >
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact">
-        <span class="section__subtitle">Get in touch</span>
-        <h2 class="section__title">Hubungi Saya</h2>
-
-        <div class="contact__container container grid">
-          <div class="contact__content">
-            <h3 class="contact__title">Bicara dengan saya</h3>
-
-            <div class="contact__info">
-              <div class="contact__card">
-                <i class="bx bx-mail-send contact__card-icon"></i>
-                <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data"
-                  >dimasmayoni8829@gmail.com</span
-                >
-
-                <a
-                  href="mailto:dimasmayoni8829@gmail.com"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Kirim pesan
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-              <div class="contact__card">
-                <i class="bx bxl-whatsapp contact__card-icon"></i>
-                <h3 class="contact__card-title">WhatsApp</h3>
-                <span class="contact__card-data">0851-6119-4164</span>
-
-                <a
-                  href="https://wa.me/6285161194164"
-                  target="_blank"
-                  class="contact__button"
-                >
-                  Kirim pesan
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-      <div class="footer__container container">
-        <h1 class="footer__title">Mayoni</h1>
-
-        <ul class="footer__list">
-          <li>
-            <a href="#about" class="footer__link">About</a>
-          </li>
-
-          <li>
-            <a href="#work" class="footer__link">Project</a>
-          </li>
-        </ul>
-
-        <ul class="footer__social">
-          <a
-            href="https://www.youtube.com/@masokatoramonline4602"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-youtube"></i>
-          </a>
-
-          <a
-            href="https://www.instagram.com/iammayoni"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/profile.php?id=100094714286074"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-facebook-circle"></i>
-          </a>
-        </ul>
-
-        <span class="footer__copy"> &#169; Mayoni. All rights reserved </span>
       </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section alt">
+      <h3>Project Terbaru</h3>
+
+      <div class="grid work-grid">
+        <div class="work-card">
+          <img src="assets/img/1.png" />
+          <div class="work-info">
+            <h4>Toko Online</h4>
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/img/2.png" />
+          <div class="work-info">
+            <h4>Fitur Nama Undangan</h4>
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/img/3.png" />
+          <div class="work-info">
+            <h4>Form Data</h4>
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/img/4.png" />
+          <div class="work-info">
+            <h4>Undangan Pernikahan</h4>
+            <a href="#" target="_blank">Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+
+      <p>
+        📧
+        <a href="mailto:dimasmayoni8829@gmail.com">
+          dimasmayoni8829@gmail.com
+        </a>
+      </p>
+
+      <p>
+        📱
+        <a href="https://wa.me/6285161194164" target="_blank">
+          0851-6119-4164
+        </a>
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Built with
+        <a href="https://www.jokoui.web.id" target="_blank">JokoUI Framework</a>
+      </p>
+      <p>© 2026 Dimas Mayoni</p>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
