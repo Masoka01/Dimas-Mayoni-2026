@@ -10,7 +10,8 @@ import {
 const firebaseConfig = {
   apiKey: "AIzaSyBCptjoTkBoZ4epUw2hYqu2i6IYi4C7cfE",
   authDomain: "portfolio-mayoni-2026.firebaseapp.com",
-  databaseURL: "https://portfolio-mayoni-2026-default-rtdb.firebaseio.com",
+  databaseURL:
+    "https://portfolio-mayoni-2026-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "portfolio-mayoni-2026",
   storageBucket: "portfolio-mayoni-2026.firebasestorage.app",
   messagingSenderId: "989687636236",
